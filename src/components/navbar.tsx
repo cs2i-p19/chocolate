@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="./">
           <img
             src="/logo-charlotte.jpg"
             alt="Fun'ky Choc logo"
@@ -32,7 +32,7 @@ export default function Navbar() {
             <li class="nav-item">
               <a
                 class={`nav-link${isActive("/") ? " text-danger" : ""}`}
-                href="/"
+                href="./"
               >
                 Home
               </a>
@@ -40,7 +40,7 @@ export default function Navbar() {
             <li class="nav-item">
               <a
                 class={`nav-link${isActive("/products") ? " text-danger" : ""}`}
-                href="/products"
+                href="./products"
               >
                 Produits
               </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 class={`nav-link${
                   isActive("/social_network") ? " text-danger" : ""
                 }`}
-                href="/social_network"
+                href="./social_network"
               >
                 Réseaux Sociaux
               </a>
